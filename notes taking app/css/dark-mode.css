@@ -1,0 +1,184 @@
+body.dark-mode {
+    background-color: #121212;
+    color: #f1f1f1;
+}
+
+
+/* Header */
+body.dark-mode .header {
+    background-color: #1e1e1e;
+    border-bottom: 1px solid #333;
+}
+
+body.dark-mode .header h1 {
+    color: #ffffff;
+}
+
+
+/* Search Box */
+body.dark-mode .search-box {
+    background-color: #1e1e1e;
+    border: 1px solid #444;
+}
+
+body.dark-mode .search-box input {
+    background-color: transparent;
+    color: #ffffff;
+}
+
+body.dark-mode .search-box input::placeholder {
+    color: #999;
+}
+
+
+/* Buttons */
+body.dark-mode .icon-btn {
+    background-color: #2a2a2a;
+    color: #ffffff;
+}
+
+body.dark-mode .icon-btn:hover {
+    background-color: #3a3a3a;
+}
+
+
+/* Notes */
+body.dark-mode .note-card {
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .note-card h3 {
+    color: #ffffff;
+}
+
+body.dark-mode .note-card p {
+    color: #cccccc;
+}
+
+body.dark-mode .note-date {
+    color: #999999;
+}
+
+
+/* Empty State */
+body.dark-mode .empty-state {
+    color: #dddddd;
+}
+
+body.dark-mode .empty-state h2 {
+    color: #ffffff;
+}
+
+body.dark-mode .empty-state p {
+    color: #aaaaaa;
+}
+
+
+/* Modal */
+body.dark-mode .modal-content {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    border: 1px solid #333;
+}
+
+body.dark-mode .modal-header {
+    border-bottom: 1px solid #333;
+}
+
+body.dark-mode .modal-header h2 {
+    color: #ffffff;
+}
+
+
+/* Form */
+body.dark-mode .form-group label {
+    color: #dddddd;
+}
+
+body.dark-mode .form-group input,
+body.dark-mode .form-group textarea {
+    background-color: #2a2a2a;
+    color: #ffffff;
+    border: 1px solid #444;
+}
+
+body.dark-mode .form-group input::placeholder,
+body.dark-mode .form-group textarea::placeholder {
+    color: #888888;
+}
+
+body.dark-mode .form-group input:focus,
+body.dark-mode .form-group textarea:focus {
+    border-color: #777777;
+    outline: none;
+}
+
+
+/* Close Button */
+body.dark-mode .close-btn {
+    color: #ffffff;
+}
+
+body.dark-mode .close-btn:hover {
+    color: #bbbbbb;
+}
+
+
+/* Cancel Button */
+body.dark-mode .cancel-btn {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+body.dark-mode .cancel-btn:hover {
+    background-color: #444444;
+}
+
+
+/* Save Button */
+body.dark-mode .save-btn {
+    background-color: #ffffff;
+    color: #121212;
+}
+
+body.dark-mode .save-btn:hover {
+    background-color: #dddddd;
+}
+
+
+/* Note Action Buttons */
+body.dark-mode .edit-btn {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+body.dark-mode .delete-btn {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+body.dark-mode .edit-btn:hover,
+body.dark-mode .delete-btn:hover {
+    background-color: #444444;
+}
+
+
+/* Scrollbar */
+body.dark-mode ::-webkit-scrollbar {
+    width: 8px;
+}
+
+body.dark-mode ::-webkit-scrollbar-track {
+    background: #121212;
+}
+
+body.dark-mode ::-webkit-scrollbar-thumb {
+    background: #444444;
+    border-radius: 10px;
+}
+
+body.dark-mode ::-webkit-scrollbar-thumb:hover {
+    background: #555555;
+}

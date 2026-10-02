@@ -1,0 +1,201 @@
+
+@media (max-width: 768px) {
+
+    .container {
+        width: 90%;
+        max-width: 100%;
+    }
+
+    .header-content {
+        padding: 15px 0;
+    }
+
+    .header h1 {
+        font-size: 24px;
+    }
+
+    .toolbar {
+        flex-direction: column;
+        gap: 15px;
+        align-items: stretch;
+    }
+
+    .search-box {
+        width: 100%;
+    }
+
+    .add-btn {
+        width: 100%;
+    }
+
+    .notes-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .note-card {
+        padding: 16px;
+    }
+
+    .modal-content {
+        width: 90%;
+        max-width: 500px;
+    }
+}
+
+
+/* ---------- Mobile ---------- */
+
+@media (max-width: 480px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    .container {
+        width: 92%;
+    }
+
+    /* Header */
+
+    .header {
+        padding: 0;
+    }
+
+    .header-content {
+        min-height: 60px;
+    }
+
+    .header h1 {
+        font-size: 20px;
+    }
+
+    .icon-btn {
+        width: 38px;
+        height: 38px;
+        font-size: 16px;
+    }
+
+
+    /* Toolbar */
+
+    .toolbar {
+        margin: 20px 0;
+        gap: 12px;
+    }
+
+    .search-box {
+        height: 44px;
+    }
+
+    .search-box input {
+        font-size: 14px;
+    }
+
+    .add-btn {
+        height: 44px;
+        font-size: 14px;
+    }
+
+
+    /* Notes */
+
+    .notes-container {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .note-card {
+        padding: 15px;
+    }
+
+    .note-card h3 {
+        font-size: 17px;
+    }
+
+    .note-card p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .note-date {
+        font-size: 12px;
+    }
+
+
+    /* Empty State */
+
+    .empty-state {
+        padding: 40px 15px;
+    }
+
+    .empty-icon {
+        font-size: 45px;
+    }
+
+    .empty-state h2 {
+        font-size: 20px;
+    }
+
+    .empty-state p {
+        font-size: 14px;
+    }
+
+
+    /* Modal */
+
+    .modal {
+        padding: 15px;
+    }
+
+    .modal-content {
+        width: 100%;
+        max-width: none;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .modal-header h2 {
+        font-size: 20px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        font-size: 14px;
+    }
+
+    .form-actions {
+        flex-direction: column-reverse;
+        gap: 10px;
+    }
+
+    .form-actions button {
+        width: 100%;
+    }
+}
+
+
+/* ---------- Very Small Screens ---------- */
+
+@media (max-width: 350px) {
+
+    .header h1 {
+        font-size: 18px;
+    }
+
+    .container {
+        width: 94%;
+    }
+
+    .modal-content {
+        padding: 15px;
+    }
+
+    .modal-header h2 {
+        font-size: 18px;
+    }
+
+    .note-card {
+        padding: 12px;
+    }
+}

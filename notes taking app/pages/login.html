@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login - My Notes</title>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Dark Mode CSS -->
+    <link rel="stylesheet" href="../css/dark-mode.css">
+
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="../css/responsive.css">
+
+    <style>
+        /* ================================
+           LOGIN PAGE
+           ================================= */
+
+        .login-page {
+            min-height: calc(100vh - 70px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 0;
+        }
+
+        .login-card {
+            width: 100%;
+            max-width: 420px;
+            background-color: #ffffff;
+            border: 1px solid #e5e5e5;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+        }
+
+        .login-icon {
+            text-align: center;
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+
+        .login-card h2 {
+            text-align: center;
+            font-size: 26px;
+            margin-bottom: 8px;
+        }
+
+        .login-subtitle {
+            text-align: center;
+            color: #777;
+            margin-bottom: 25px;
+        }
+
+        .login-form .form-group {
+            margin-bottom: 18px;
+        }
+
+        .login-form label {
+            display: block;
+            margin-bottom: 7px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .login-form input {
+            width: 100%;
+            height: 45px;
+            padding: 0 12px;
+            border: 1px solid #ddd;
+            border-radius: 7px;
+            font-size: 14px;
+            outline: none;
+        }
+
+        .login-form input:focus {
+            border-color: #555;
+        }
+
+        .login-btn {
+            width: 100%;
+            height: 45px;
+            border: none;
+            border-radius: 7px;
+            background-color: #222;
+            color: #ffffff;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            margin-top: 5px;
+        }
+
+        .login-btn:hover {
+            background-color: #444;
+        }
+
+        .login-links {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .login-links a {
+            color: #333;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .login-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* Dark Mode */
+
+        body.dark-mode .login-card {
+            background-color: #1e1e1e;
+            border-color: #333;
+        }
+
+        body.dark-mode .login-card h2 {
+            color: #ffffff;
+        }
+
+        body.dark-mode .login-subtitle {
+            color: #aaaaaa;
+        }
+
+        body.dark-mode .login-form label {
+            color: #dddddd;
+        }
+
+        body.dark-mode .login-form input {
+            background-color: #2a2a2a;
+            border-color: #444;
+            color: #ffffff;
+        }
+
+        body.dark-mode .login-btn {
+            background-color: #ffffff;
+            color: #121212;
+        }
+
+        body.dark-mode .login-btn:hover {
+            background-color: #dddddd;
+        }
+
+        body.dark-mode .login-links a {
+            color: #dddddd;
+        }
+
+        /* Mobile */
+
+        @media (max-width: 480px) {
+
+            .login-page {
+                padding: 25px 0;
+            }
+
+            .login-card {
+                padding: 22px;
+            }
+
+            .login-card h2 {
+                font-size: 23px;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <!-- ================================
+         HEADER
+         ================================= -->
+
+    <header class="header">
+
+        <div class="container header-content">
+
+            <h1>📝 My Notes</h1>
+
+            <a href="../index.html" class="add-btn">
+                ← Home
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================================
+         LOGIN
+         ================================= -->
+
+    <main class="container login-page">
+
+        <section class="login-card">
+
+            <div class="login-icon">
+                🔐
+            </div>
+
+            <h2>Welcome Back</h2>
+
+            <p class="login-subtitle">
+                Login to continue to My Notes
+            </p>
+
+
+            <form
+                class="login-form"
+                id="loginForm"
+            >
+
+                <!-- Email -->
+
+                <div class="form-group">
+
+                    <label for="email">
+                        Email Address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        autocomplete="email"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- Password -->
+
+                <div class="form-group">
+
+                    <label for="password">
+                        Password
+                    </label>
+
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Enter your password"
+                        autocomplete="current-password"
+                        minlength="6"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- Login Button -->
+
+                <button
+                    type="submit"
+                    class="login-btn"
+                >
+                    Login
+                </button>
+
+            </form>
+
+
+            <!-- Links -->
+
+            <div class="login-links">
+
+                <a href="../index.html">
+                    Continue without login
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================================
+         JAVASCRIPT
+         ================================= -->
+
+    <script>
+
+        const loginForm =
+            document.getElementById("loginForm");
+
+        loginForm.addEventListener("submit", function (event) {
+
+            event.preventDefault();
+
+            const email =
+                document.getElementById("email").value.trim();
+
+            const password =
+                document.getElementById("password").value.trim();
+
+
+            if (!email || !password) {
+
+                alert("Please fill in all fields.");
+
+                return;
+            }
+
+
+            /*
+             * Demo login only.
+             * No real authentication is performed.
+             */
+
+            alert("Demo login successful!");
+
+            window.location.href = "../index.html";
+
+        });
+
+    </script>
+
+</body>
+
+</html>
